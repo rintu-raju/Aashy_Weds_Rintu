@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -761,13 +761,13 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   color: #F14E95;
   padding-left: 10px;
   padding-right: 10px;
@@ -822,6 +822,8 @@ h1, h2, h3, h4, h5, h6, figure {
 form label {
   font-weight: normal !important;
 }
+/*rintu */
+
 
 #fh5co-header .display-tc,
 #fh5co-counter .display-tc,
@@ -847,7 +849,10 @@ form label {
   font-family: "Sacramento", Arial, serif;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-header .display-tc h1,
+  /* #fh5co-header .display-tc h1, */
+  #fh5co-header {
+    background-image: url(images/image_laptop.jpg);
+  }
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
     font-size: 40px;
@@ -893,6 +898,9 @@ form label {
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
 }
 
+
+
+/* rintu */
 #fh5co-counter {
   text-align: center;
 }
@@ -933,38 +941,29 @@ form label {
 }
 
 .simply-countdown {
-  /* The countdown */
-  margin-bottom: 2em;
+  /* The countdown container */
+  position: relative;
+  margin-bottom: 8em;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; /* Distribute bubbles evenly */
 }
 
 .simply-countdown > .simply-section {
-  /* coutndown blocks */
+  /* Countdown blocks */
   display: inline-block;
   width: 100px;
   height: 100px;
   background: rgba(241, 78, 149, 0.8);
   margin: 0 4px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
   border-radius: 50%;
   position: relative;
   animation: pulse 1s ease infinite;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .simply-countdown > .simply-section > div {
-  /* countdown block inner div */
+  /* Countdown block inner div */
   display: table-cell;
   vertical-align: middle;
   height: 100px;
@@ -975,20 +974,21 @@ form label {
 .simply-countdown > .simply-section .simply-word {
   display: block;
   color: white;
-  /* amounts and words */
+  /* Amounts and words */
 }
 
 .simply-countdown > .simply-section .simply-amount {
   font-size: 30px;
-  /* amounts */
+  /* Amounts */
 }
 
 .simply-countdown > .simply-section .simply-word {
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
   font-size: 12px;
-  /* words */
+  /* Words */
 }
+
 
 #fh5co-testimonial,
 #fh5co-services,
@@ -1224,7 +1224,7 @@ form label {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   width: 100px;
   height: 100px;
 }
